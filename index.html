@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYTONS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="instruction">
+        <div class="container">
+            <div class="header">
+                <h3 class="title">PHYTONS</h3>
+            </div>
+            <div class="card">
+                <div class="instruction">
+                    <h3 id="title">Instruction</h3>
+                    <p class="the-instruction">
+                    <ol>
+                        <li>Phyton should eat food pellet to increase its length which also increase player’s score.
+                        </li>
+                        <li>If phyton head hit board edge, phyton will die.</li>
+                        <li>Player can rewind the phyton game for 10 step</li>
+                        <li>Player can cancel the rewind feature using “Cancel Rewind” button.</li>
+                        <li>Phyton dies if it hit its own tail.</li>
+                        <li>Phyton cannot move directly into opposite direction.</li>
+                    </ol>
+                    </p>
+                    <h3 id="title2">Controllers</h3>
+                    <p class="the-controllers">
+                    <ul>
+                        <li>W / ArrowUp = Phyton will go up.</li>
+                        <li>A / ArrowLeft = Phyton will go left.</li>
+                        <li>S / ArrowDown = Phyton will go down.</li>
+                        <li>D / ArrowRight = Phyton will go right.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="field">
+                    <input type="text" name="username" id="username">
+                    <button class="start" disabled>Play</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="playground">
+        <div class="container">
+            <div class="header">
+                <span class="timer">Timer: <span id="timer">00:00:12</span></span>
+                <h3 class="title">PHYTONS</h3>
+                <span class="score">Score: <span id="score">06</span></span>
+            </div>
+            <div class="canvas">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="option">
+                <input type="range" name="rewind" id="rewind" min="0" max="10" value="10" step="1">
+                <div id="option">
+                    <button class="rewind">Rewind</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Snake.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

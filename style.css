@@ -1,0 +1,116 @@
+body {
+    background-color: darkslategray;
+    font-family: 'Helvetica';
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title, #title, #title2 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card {
+    background-color: ghostwhite;
+    width: 120vh;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.the-instruction, .the-controllers {
+    text-align: left!important;
+}
+
+.field {
+    display: flex;
+    justify-content: stretch;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+button.start {
+    padding: 10px;
+    background-color: #0069d9;
+    color: floralwhite;
+}
+
+button.start:hover {
+    background-color: #5d96d4 ;
+}
+
+button.start:disabled {
+    background-color: #808080 ;
+}
+
+#playground {
+    text-align: center;
+    display: none;
+    margin-top: -50px;
+}
+
+#playground .header {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    align-items: baseline;
+    color: white;
+    margin-bottom: -50px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#option {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.rewind, .cancel {
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    width: 50%;
+}
+
+.rewind {
+    background-color: firebrick;
+}
+
+.cancel {
+    display: none;
+    background-color: grey;
+}
+
+#rewind {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
